@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HamHub Quiz</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header class="app-header">
+    <h1>HamHub Quiz</h1>
+    <div class="header-right">
+      <span id="score-display" class="score"></span>
+      <button id="quit-btn" class="btn btn-quit">Quit</button>
+    </div>
+  </header>
+
+  <main id="quiz-screen" class="screen" hidden>
+    <p id="question-id" class="question-id"></p>
+    <p id="question-text" class="question-text"></p>
+    <div id="choices" class="choices"></div>
+    <p id="feedback" class="feedback"></p>
+    <button id="next-btn" class="btn btn-next" hidden>Next Question &rarr;</button>
+  </main>
+
+  <main id="end-screen" class="screen" hidden>
+    <h2>Final Score</h2>
+    <p id="final-score" class="final-score"></p>
+    <button id="restart-btn" class="btn btn-next">Start Over</button>
+  </main>
+
+  <main id="loading-screen" class="screen">
+    <p>Loading questions...</p>
+  </main>
+</div>
+
+<script src="questions.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
